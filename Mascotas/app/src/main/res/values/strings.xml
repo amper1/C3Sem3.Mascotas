@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Mascotas</string>
+    <string name="nombre_mascota">Mascota</string>
+    <string name="ranking_mascota">Ranking</string>
+    <string name="titulo_bar">Petagram</string>
+</resources>
