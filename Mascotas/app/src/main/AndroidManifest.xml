@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Favoritos"
-            android:theme="@style/FavTheme"></activity>
+        <activity
+            android:name=".Favoritos"
+            android:theme="@style/FavTheme" />
+        <activity android:name=".Contacto"></activity>
     </application>
 
 </manifest>

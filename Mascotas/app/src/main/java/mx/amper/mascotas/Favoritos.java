@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import mx.amper.mascotas.adaptador.MascotasAdaptador;
+
 public class Favoritos extends AppCompatActivity {
     ArrayList<Mascotas> mascotas;
     Activity activity;

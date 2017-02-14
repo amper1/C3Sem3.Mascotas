@@ -1,4 +1,4 @@
-package mx.amper.mascotas;
+package mx.amper.mascotas.adaptador;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

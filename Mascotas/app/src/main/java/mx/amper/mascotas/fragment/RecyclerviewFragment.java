@@ -1,7 +1,6 @@
-package mx.amper.mascotas;
+package mx.amper.mascotas.fragment;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,10 +9,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import mx.amper.mascotas.Mascotas;
+import mx.amper.mascotas.adaptador.MascotasAdaptador;
+import mx.amper.mascotas.R;
 
 
 /**

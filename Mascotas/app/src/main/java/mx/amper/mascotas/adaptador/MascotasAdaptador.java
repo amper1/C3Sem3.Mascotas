@@ -1,7 +1,6 @@
-package mx.amper.mascotas;
+package mx.amper.mascotas.adaptador;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import mx.amper.mascotas.Mascotas;
+import mx.amper.mascotas.Mascotas2;
+import mx.amper.mascotas.R;
 
 /**
  * Created by amper on 03/02/2017.
@@ -36,7 +39,6 @@ public class MascotasAdaptador extends RecyclerView.Adapter<MascotasAdaptador.Ma
             tvRanking = (TextView) itemView.findViewById(R.id.tvRanking);
             btnBonce  = (ImageButton) itemView.findViewById(R.id.ibBone_only);
             btnBonce_Y = (ImageButton) itemView.findViewById(R.id.ibBone_Y);
-            /*btnRanking = (ImageButton) itemView.findViewById(R.id.ibStar);*/
 
         }
     }

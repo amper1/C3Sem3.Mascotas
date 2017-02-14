@@ -1,20 +1,21 @@
 package mx.amper.mascotas;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import mx.amper.mascotas.adaptador.PageAdapter;
+import mx.amper.mascotas.fragment.MascotasFragment;
+import mx.amper.mascotas.fragment.RecyclerviewFragment;
 
 import static mx.amper.mascotas.R.layout.activity_main;
 
