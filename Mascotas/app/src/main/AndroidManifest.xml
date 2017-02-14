@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Favoritos"
+            android:name=".Pojo.Favoritos"
             android:theme="@style/FavTheme" />
-        <activity android:name=".Contacto"></activity>
+        <activity android:name=".Pojo.Contacto"></activity>
     </application>
 
 </manifest>

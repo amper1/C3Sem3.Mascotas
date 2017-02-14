@@ -1,4 +1,4 @@
-package mx.amper.mascotas;
+package mx.amper.mascotas.Pojo;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import mx.amper.mascotas.MainActivity;
+import mx.amper.mascotas.R;
 import mx.amper.mascotas.adaptador.MascotasAdaptador;
 
 public class Favoritos extends AppCompatActivity {

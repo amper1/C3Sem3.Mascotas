@@ -12,8 +12,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import mx.amper.mascotas.Mascotas;
-import mx.amper.mascotas.Mascotas2;
+import mx.amper.mascotas.Pojo.Mascotas;
 import mx.amper.mascotas.R;
 
 /**

@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import mx.amper.mascotas.Mascotas;
+import mx.amper.mascotas.Pojo.Mascotas;
 import mx.amper.mascotas.adaptador.MascotasAdaptador;
 import mx.amper.mascotas.R;
 

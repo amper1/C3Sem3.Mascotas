@@ -1,4 +1,4 @@
-package mx.amper.mascotas;
+package mx.amper.mascotas.Pojo;
 
 /**
  * Created by MB17056 on 03/02/2017.

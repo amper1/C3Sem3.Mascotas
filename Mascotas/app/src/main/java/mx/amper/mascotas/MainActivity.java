@@ -6,13 +6,18 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import mx.amper.mascotas.Pojo.Contacto;
+import mx.amper.mascotas.Pojo.Favoritos;
 import mx.amper.mascotas.adaptador.PageAdapter;
 import mx.amper.mascotas.fragment.MascotasFragment;
 import mx.amper.mascotas.fragment.RecyclerviewFragment;
@@ -66,4 +71,44 @@ public class MainActivity extends AppCompatActivity  {
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_dog);
     }
 
+    public void levantarMenuPopUp(View v) {
+        ImageView imagen = (ImageView) findViewById(R.id.ibMenu);
+        PopupMenu popupMenu = new PopupMenu(this,imagen);
+        popupMenu.getMenuInflater().inflate(R.menu.menu_popup, popupMenu.getMenu());
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.mContacto:
+                        Toast.makeText(getBaseContext(),"Contacto", Toast.LENGTH_SHORT).show();
+                        Intent i1 = new Intent(getBaseContext(),Contacto.class);
+                        startActivity(i1);
+                        break;
+
+                    case R.id.mAbout:
+                        Toast.makeText(getBaseContext(),"Acerca de", Toast.LENGTH_SHORT).show();
+                        break;
+
+                }
+                return false;
+            }
+        });
+        popupMenu.show();
+    }
+
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.mContacto:
+                Toast.makeText(this,"Contacto", Toast.LENGTH_SHORT).show();
+
+                break;
+
+            case R.id.mAbout:
+                Toast.makeText(this,"Acerca de", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onContextItemSelected(item);
+    }
 }
