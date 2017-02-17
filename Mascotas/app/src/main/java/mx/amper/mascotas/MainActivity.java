@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
@@ -87,6 +88,8 @@ public class MainActivity extends AppCompatActivity  {
 
                     case R.id.mAbout:
                         Toast.makeText(getBaseContext(),"Acerca de", Toast.LENGTH_SHORT).show();
+                        Intent i2 = new Intent(getBaseContext(),about.class);
+                        startActivity(i2);
                         break;
 
                 }

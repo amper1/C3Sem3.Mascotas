@@ -21,7 +21,8 @@
         <activity
             android:name=".Pojo.Favoritos"
             android:theme="@style/FavTheme" />
-        <activity android:name=".Pojo.Contacto"></activity>
+        <activity android:name=".Pojo.Contacto" />
+        <activity android:name=".about"></activity>
     </application>
 
 </manifest>
