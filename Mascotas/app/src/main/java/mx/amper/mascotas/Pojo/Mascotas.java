@@ -5,15 +5,21 @@ package mx.amper.mascotas.Pojo;
  */
 
 public class Mascotas {
-    private int foto;
+
+    private int id;
     private String nombre;
-    private String ranking;
+    private int foto;
+    private int ranking;
 
 
-    public Mascotas (int foto, String nombre, String ranking){
+    public Mascotas (int foto, String nombre, int ranking){
         this.foto = foto;
         this.nombre = nombre;
         this.ranking = ranking;
+    }
+
+    public Mascotas (){
+
     }
 
     public int getFoto() {
@@ -32,11 +38,19 @@ public class Mascotas {
         this.nombre = nombre;
     }
 
-    public String getRanking() {
+    public int getRanking() {
         return ranking;
     }
 
-    public void setRanking(String ranking) {
+    public void setRanking(int ranking) {
         this.ranking = ranking;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

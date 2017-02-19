@@ -6,22 +6,29 @@ package mx.amper.mascotas.db;
 
 public class ConstantesBD {
     //Nombre de base de datos
-    public static final String DATABASE_NAME = "db_mascotas";
-    public static final int DATABASE_VERSION = 1;
+    public static final String DATABASE_NAME    = "db_mascotas";
+    public static final int DATABASE_VERSION    = 1;
 
     //Tablas
     //mascota
-    public static final String TB_MASCOTA = "mascota";
+    public static final String TB_MASCOTA       = "mascota";
     //mascota -- campos
-    public static final String TB_MASCOTA_ID = "id_masc";
-    public static final String TB_MASCOTA_NOM = "nombre";
-    public static final String TB_MASCOTA_FOTO = "foto";
+    public static final String TB_MASCOTA_ID    = "id_masc";
+    public static final String TB_MASCOTA_NOM   = "nombre";
+    public static final String TB_MASCOTA_FOTO  = "foto";
 
     //like_mascota
-    public static final String TB_LIKES = "like_mascota";
+    public static final String TB_LIKES         = "like_mascota";
     //like_mascota -- campos
-    public static final String TB_LIKES_ID = "id_like";
+    public static final String TB_LIKES_ID      = "id_like";
     public static final String TB_LIKES_ID_MASC = "id_masc";
-    public static final String TB_LIKES_LIKE = "like";
+    public static final String TB_LIKES_LIKE    = "like";
+
+    //fotos_mascotas
+    public static final String TB_FOTOS         = "fotos_mascotas";
+    //fotos_mascotas  -- campos
+    public static final String TB_FOTOS_ID      = "id_foto";
+    public static final String TB_FOTOS_ID_MASC = "id_masc";
+    public static final String TB_FOTOS_FOTO    = "foto";
 
 }
